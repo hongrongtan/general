@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cycling Equipment Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header class="bg-gray-900 text-white p-4">
+    <h1 class="text-2xl">Cycling Equipment Store</h1>
+    <nav class="mt-2">
+      <ul class="flex">
+        <li class="mr-4"><a href="#">Home</a></li>
+        <li class="mr-4"><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="p-4">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-semibold">Products</h2>
+      <select id="categorySelect" class="border rounded p-2">
+        <option value="all">All Categories</option>
+        <option value="bikes">Bikes</option>
+        <option value="helmets">Helmets</option>
+        <!-- Add more categories here -->
+      </select>
+    </div>
+    
+    <div id="products" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Product cards will be dynamically generated using JavaScript -->
+    </div>
+  </section>
+  
+  <footer class="bg-gray-900 text-white p-4 text-center">
+    <p>&copy; 2023 Cycling Equipment Store</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
